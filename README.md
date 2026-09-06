@@ -1,7 +1,7 @@
 # SQL-SERVER-UNI-ADMISION-ANALYSIS
 SQL-SERVER-UNI-ADMISION-ANALYSIS
 ## Contexto del Proyecto
-En este proyecto se analizan los resultados del proceso de admisión a la Universidad Nacional de Ingeniería (UNI) para los periodos 2025-II y 2026-I. Utilizando la base oficial de [Datos Abiertos del Estado Peruano](https://www.datosabiertos.gob.pe/dataset/postulantes-al-concurso-de-admisi%C3%B3n-de-la-universidad-nacional-de-ingenier%C3%ADa-del-2025-2-al), se aplican consultas en SQL Server para limpiar la información y extraer insights clave mediante agregaciones, expresiones de tabla comunes (CTEs) y funciones de ventana.
+En este proyecto se analizan los resultados del proceso de admisión a la Universidad Nacional de Ingeniería (UNI) para los periodos 2025-II y 2026-I. Utilizando la base oficial de [Datos Abiertos del Estado Peruano](https://www.datosabiertos.gob.pe/dataset/postulantes-al-concurso-de-admisi%C3%B3n-de-la-universidad-nacional-de-ingenier%C3%ADa-del-2025-2-al), se aplican consultas en SQL Server para limpiar la información y extraer hallazgos clave mediante agregaciones, expresiones de tabla comunes (CTEs) y funciones de ventana.
 
 El objetivo del estudio es evaluar cómo influyen variables como el colegio de procedencia, la modalidad de ingreso, el género y la ubicación geográfica en el rendimiento académico de los postulantes.
 
@@ -197,7 +197,7 @@ ORDER BY Tasa_Ausentismo_Pct DESC;
 - Resultado: 
 ![imagene_p6](./picture/P6.png)
 - Conclusión:  
-La tasa de ausentismo o descalificación técnica (nota 0.00) entre los postulantes que no ingresaron es sumamente baja en todas las especialidades, manteniéndose por debajo del 4%. Ingeniería Electrónica encabeza el grupo con un 3.70%, seguida de Ingeniería Eléctrica con 2.86%. Estos valores confirman una alta tasa de asistencia efectiva y compromiso por parte de los aspirantes en la fase de evaluación.
+La tasa de ausentismo o descalificación técnica (nota 0.00) entre los postulantes que no ingresaron es sumamente baja en todas las especialidades, manteniéndose por debajo del 4%. Ingeniería Electrónica encabeza el grupo con un 3.70%, seguida de Ingeniería Eléctrica con 2.86%. Estos valores confirman que la gran mayoría de postulantes sí rinde efectivamente las evaluaciones.
 
 ### Pregunta 7: 
 ¿El tipo de gestión del colegio (Público vs. Privado) influye en la tasa de ingreso y en el rendimiento académico?
@@ -269,7 +269,7 @@ ORDER BY Ranking_Aporte ASC;
 - Resultado: 
 ![imagene_p8](./picture/P8.png)
 - Conclusión:  
-Al consolidar las sedes fragmentadas en consorcios educativos, se evidencia un dominio abrumador del Consorcio Saco Oliveros (198 ingresantes) y el Consorcio Trilce (156 ingresantes), sumando entre ambos más del 14% del total de ingresantes. Asimismo, Trilce alcanza el promedio de calificación más alto del Top 3 con 1419.12 puntos.
+Al consolidar las sedes fragmentadas en consorcios educativos, se evidencia un liderazgo claro del Consorcio Saco Oliveros (198 ingresantes) y el Consorcio Trilce (156 ingresantes), sumando entre ambos más del 14% del total de ingresantes. Asimismo, Trilce alcanza el promedio de calificación más alto del Top 3 con 1419.12 puntos.
 
 ### Pregunta 9: 
 ¿Quiénes obtuvieron el puntaje máximo por especialidad y de qué distrito y colegio provienen? (Uso de ROW_NUMBER)
